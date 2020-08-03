@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ButtonIncrease from "./ButtonIncrease";
+import ButtonReset from "./ButtonReset";
+import ButtonDecrease from "./ButtonDecrease";
 
-function App() {
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = value => {
+    value === "reset" ? setCount(0) : setCount(count + value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>{count}</h2>
+
+      <ButtonIncrease value={1} onClickFunction={incrementCount} />
+      <ButtonIncrease value={10} onClickFunction={incrementCount} />
+      <ButtonIncrease value={100} onClickFunction={incrementCount} />
+      <ButtonIncrease value={1000} onClickFunction={incrementCount} />
+      <br />
+      <br />
+      <ButtonReset value={"reset"} onClickFunction={incrementCount} />
+      <br />
+      <br />
+      <ButtonDecrease value={-1} onClickFunction={incrementCount} />
+      <ButtonDecrease value={-10} onClickFunction={incrementCount} />
+      <ButtonDecrease value={-100} onClickFunction={incrementCount} />
+      <ButtonDecrease value={-1000} onClickFunction={incrementCount} />
     </div>
   );
-}
+};
 
 export default App;
