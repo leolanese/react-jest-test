@@ -1,10 +1,10 @@
 import React from "react";
-import { render, fireEvent } from "react-testing-library";
+import { render, fireEvent } from "@testing-library/react";
 import App from "./App";
 
 test("Validate App works", () => {
   const { container } = render(<App />);
-  console.log(container);
+  // console.log(container);
   const buttons = container.querySelectorAll("button");
 
   expect(buttons[0].textContent).toBe("1");
@@ -29,3 +29,12 @@ test("Validate App works", () => {
   fireEvent.click(buttons[0]);
   expect(result.textContent).toBe("1222");
 });
+
+// describe('Validate snapshot App works', () => {
+//   test('snapshot renders', () => {
+//     const component = renderer.create(<App />);
+//     let tree = component.toJSON();
+//     expect(tree).toMatchSnapshot();
+//   });
+// });
+

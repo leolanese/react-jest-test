@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ButtonIncrease from "./ButtonIncrease";
-import ButtonReset from "./ButtonReset";
-import ButtonDecrease from "./ButtonDecrease";
+import ButtonIncrease from "./components/ButtonIncrease";
+import ButtonReset from "./components/ButtonReset";
+import ButtonDecrease from "./components/ButtonDecrease";
 
 const App = () => {
   const [count, setCount] = useState(0);

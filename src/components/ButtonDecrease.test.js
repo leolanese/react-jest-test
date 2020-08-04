@@ -1,6 +1,6 @@
 import React from "react";
-import { render, fireEvent } from "react-testing-library";
 import ButtonDecrease from "./ButtonDecrease";
+import { render, fireEvent } from "@testing-library/react";
 
 let count;
 
