@@ -11,9 +11,8 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="test-wrapper">
       <h2>{count}</h2>
-
       <ButtonIncrease value={1} onClickFunction={incrementCount} />
       <ButtonIncrease value={10} onClickFunction={incrementCount} />
       <ButtonIncrease value={100} onClickFunction={incrementCount} />

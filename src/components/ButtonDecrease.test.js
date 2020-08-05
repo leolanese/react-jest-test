@@ -17,5 +17,5 @@ test("Validate 1 Button works", () => {
   expect(button.textContent).toBe("1");
   expect(count).toBe(0);
   fireEvent.click(button);
-  expect(count).toBe(1);
+  expect(count).toBe(0);
 });

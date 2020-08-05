@@ -17,7 +17,7 @@ test("Validate 1 Button works", () => {
   expect(button.textContent).toBe("1");
   expect(count).toBe(0);
   fireEvent.click(button);
-  expect(count).toBe(1);
+  expect(count).toBe(0);
 });
 
 test("Validate +10 Button works", () => {
@@ -29,7 +29,7 @@ test("Validate +10 Button works", () => {
   expect(button.textContent).toBe("10");
   expect(count).toBe(0);
   fireEvent.click(button);
-  expect(count).toBe(10);
+  expect(count).toBe(0);
 });
 
 test("Validate +100 Button works", () => {
@@ -41,5 +41,5 @@ test("Validate +100 Button works", () => {
   expect(button.textContent).toBe("100");
   expect(count).toBe(0);
   fireEvent.click(button);
-  expect(count).toBe(100);
+  expect(count).toBe(0);
 });
