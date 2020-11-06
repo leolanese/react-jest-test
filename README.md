@@ -78,11 +78,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ---
 ### :100: <i>Thanks!</i>
-#### Let's stay in touch!
+#### Now, don't be an stranger. Let's stay in touch!
 
-> { I'm `Leo Lanese`,<br>
-   'Building Inspiring Responsive `Reactive Solutions`',<br>
-   '`London, UK`' }<br>
+> I'm a passionately curious Front-end Engineer. I like sharing what I know, and learning what I don't. London, UK.
 
 ##### :radio_button: linkedin: <a href="https://www.linkedin.com/in/leolanese/" target="_blank">@LeoLaneseltd</a>
 ##### :radio_button: Twitter: <a href="https://twitter.com/LeoLaneseltd" target="_blank">@LeoLaneseltd</a>
